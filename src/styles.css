@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    width: 100vw;
+    right: 100vr;
+    background-image: url(https://i.pinimg.com/originals/a3/f7/25/a3f7258c2886837d26ca3cf2e988b76b.jpg);
+    background-size:cover ;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px
+}

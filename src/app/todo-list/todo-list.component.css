@@ -1,0 +1,35 @@
+.list-unstyled{
+    list-style: none;
+}
+.form-control{
+    border-radius: 5px;
+    height: 50px;
+    width: 200px;
+    border: none;
+
+}
+.form-inline{
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgb(0 0 0 / 30%);
+}
+.form-control{
+    flex: 3;
+    font-size: 1rem;
+    border: 2px solid #d1d3d4;
+    border-radius: 5px;
+    padding: 12px;
+    font-weight: 500;
+    width: 300px;
+}
+#sortable{
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgb(0 0 0 / 30%);
+    margin-top: 10px;
+}
+mat-icon{
+    color: rgb(125, 180, 168);
+}

@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="todolist not-done">
+        
+        <h1 [ngStyle]="{color:'rgb(42, 73, 73)', textAlign:'center'}">Todo List</h1>
+        <form class="form-inline">
+          <input type="text" class="form-control add-todo" name="item" [(ngModel)]="itemToAdd" placeholder="Add Item...">
+          <button [ngStyle]="{marginLeft:'10px',height:'47px', backgroundColor:'rgb(241, 188, 188)'}" mat-raised-button id="checkAll" class="btn btn-success ml-2" (click)="addToList()">Adicionar</button>   
+        </form>
+        
+        <ul id="sortable" class="list-unstyled">
+          <li class="ui-state-default" *ngFor="let item of todoList; let i = index">
+            <div class="checkbox" id="doI">
+              <label>
+                <input type="checkbox" value="" (click)="doItem(i)">{{item}}</label>
+                <button mat-icon-button value="" (click)="excluiTarefa(i)"><mat-icon>delete</mat-icon></button>
+            </div>
+          </li>
+        </ul>
+        
+        <h2 [ngStyle]="{color:'rgb(42, 73, 73)', textAlign:'center'}">Tarefas feitas</h2>
+        <ul id="sortable" class="list-unstyled">
+          <li class="ui-state-default" *ngFor="let item of doneList">
+            <div class="checkbox">
+              <label>
+                <span style="text-decoration:line-through;">{{item}}</span>
+              </label>
+            </div>
+          </li>
+        </ul>
+      
+       <button [ngStyle]="{marginTop:'10px', width:'450px', backgroundColor:'rgb(241, 188, 188)'}" mat-raised-button  value="" (click)="excluirTodasTarefas()" ><mat-icon>delete</mat-icon></button> 
+    </div>
+</div>
